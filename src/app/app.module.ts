@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { HomeDashboardComponent } from './home-dashboard/home-dashboard.component';
+import { TopChartsComponent } from './top-charts/top-charts.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    SideBarComponent
+    SideBarComponent,
+    TopChartsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,46 @@
+.dashboard{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    padding-left: 3.5vw;
+}
+.top{
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.topCharts{
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    >div{
+        border: 1px solid black;
+        border-radius: 8px;
+        width: 30.6%;
+        height: 32vh;
+        padding: 1%;
+        >h3{
+            margin: 0px;
+        }
+        >p{
+            margin: 0.5px;
+        }
+    }
+}
+.bottomChart{
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.5vh;
+    >div{
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 47vh;
+    }
+}
