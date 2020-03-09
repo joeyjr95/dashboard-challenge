@@ -1,7 +1,7 @@
 .topBar{
     position: fixed;
     width: 100%;
-   
+    top: 0;
 }
 .topBarFlex{
     display: flex;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 .topBarUL{
-    width: 25%;
+    width: 20%;
     list-style: none;
     padding-left: 0px;
     display: flex;

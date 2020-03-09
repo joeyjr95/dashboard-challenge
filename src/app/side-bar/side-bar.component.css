@@ -3,9 +3,18 @@
     width: 3.5vw;
     height: 100%;
     background: #000;
+    top: 0;
+    left: 0;
 }
 .sideBarUL {
     color: white;
     list-style: none;
     padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    justify-content: flex-start;
+}
+.sideBarUL li{
+    margin-bottom: 5vh;
 }
