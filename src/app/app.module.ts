@@ -6,7 +6,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { SideBarComponent } from './side-bar/side-bar.component'
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { HomeDashboardComponent } from './home-dashboard/home-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +18,10 @@ import { SideBarComponent } from './side-bar/side-bar.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // ReactiveFormsModule,
-    // RouterModule.forRoot([
-    //   { path: '', component: SideBarComponent },
-    // ])
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeDashboardComponent },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

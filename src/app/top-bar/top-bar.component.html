@@ -1,9 +1,14 @@
-<a [routerLink]="['/']">
-<h1>APP NAME</h1>
-</a>
-<div *ngFor="let topBarIcon of topBarIcons">
+<div [className]=" 'topBar' ">
+<div [className]=" 'topBarFlex' ">
+<h1 [className]=" 'topBarH1' "><a [routerLink]="['/']">APP NAME</a></h1>
+
+<ul [className]=" 'topBarUL' ">
+<li [className]="topBarIcon.name" *ngFor="let topBarIcon of topBarIcons">
     <a [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
         {{topBarIcon.name}}
     </a>
+</li>
+</ul>
+</div>
 </div>
 

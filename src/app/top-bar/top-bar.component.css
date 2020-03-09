@@ -1,0 +1,30 @@
+.topBar{
+    position: fixed;
+    width: 100%;
+   
+}
+.topBarFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: whitesmoke;
+    height: 2.5vw;
+    border: .07px solid black;
+    align-items: center;
+}
+.topBarUL{
+    width: 25%;
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2vw;
+}
+.topBarH1{
+    padding-left: 4.5vw;
+ 
+}
+.topBarH1 a{
+    text-decoration: none;
+    color: #000;
+}

@@ -1,0 +1,11 @@
+.sideBar {
+    position: fixed;
+    width: 3.5vw;
+    height: 100%;
+    background: #000;
+}
+.sideBarUL {
+    color: white;
+    list-style: none;
+    padding-left: 0px;
+}

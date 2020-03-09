@@ -1,5 +1,8 @@
-<div *ngFor="let sideBarIcon of sideBarIcons">
-    <a [title]="sideBarIcon.name + ':' + ' ' + sideBarIcon.description">
+<div [className]=" 'sideBar' ">
+  <ul [className]=" 'sideBarUL' ">
+    <li *ngFor="let sideBarIcon of sideBarIcons" [className]="sideBarIcon.name">
+      <a  [title]="sideBarIcon.name + ':' + ' ' + sideBarIcon.description">
         {{sideBarIcon.name}}
-    </a>
+      </a></li>
+  </ul>
 </div>
