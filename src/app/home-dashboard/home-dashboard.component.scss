@@ -6,12 +6,27 @@
     align-items: center;
     padding-top: 5vh;
     padding-left: 3.5vw;
+   
 }
 .top{
     display: flex;
     width: inherit;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    >h2{
+        color: rgb(114, 112, 112);
+    }
+    >a{
+        box-shadow: 2.5px 2.5px rgba(119, 119, 119, 0.678);
+        background-color: white;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 4px;
+    }
+
 }
 .topCharts{
     display: flex;
@@ -19,7 +34,8 @@
     flex-direction: row;
     justify-content: space-between;
     >div{
-        border: 1px solid black;
+        background: rgb(250, 249, 249);
+        box-shadow: 3.5px 3.5px rgba(119, 119, 119, 0.678);;
         border-radius: 8px;
         width: 30.6%;
         height: 32vh;
@@ -29,6 +45,7 @@
         }
         >p{
             margin: 0.5px;
+            color: rgb(114, 112, 112);
         }
     }
 }
@@ -39,8 +56,12 @@
     justify-content: space-between;
     padding-top: 1.5vh;
     >div{
-    border: 1px solid black;
+    background: rgb(250, 249, 249);
+    box-shadow: 3.5px 3.5px rgba(119, 119, 119, 0.678);
     border-radius: 8px;
     height: 47vh;
+    > p{
+        color: rgb(114, 112, 112);
+    }
     }
 }

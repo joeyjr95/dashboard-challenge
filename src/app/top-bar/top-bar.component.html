@@ -4,9 +4,24 @@
 
 <ul [className]=" 'topBarUL' ">
 <li [className]="topBarIcon.name" *ngFor="let topBarIcon of topBarIcons">
-    <a [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
-        {{topBarIcon.name}}
-    </a>
+        
+                    <a *ngIf="topBarIcon.name === 'Search'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
+                        <fa-icon [className]=" 'popUL' " [icon]='faSearch'></fa-icon>
+                    </a>
+                    <a *ngIf="topBarIcon.name === 'Alert'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
+                        <fa-icon [className]=" 'popUL' " [icon]='faBell'></fa-icon>
+                    </a>
+                    <a *ngIf="topBarIcon.name === 'Messages'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
+                        <fa-icon [className]=" 'popUL' " [icon]='faCommentAlt'></fa-icon>
+                    </a>
+                    <a *ngIf="topBarIcon.name === 'User Icon'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
+                           {{ topBarIcon.name }}
+                        </a>
+                        <a *ngIf="topBarIcon.name === 'John Doe'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
+                                {{ topBarIcon.name }}
+                             </a>
+                    
+                  
 </li>
 </ul>
 </div>

@@ -1,8 +1,17 @@
 <div [className]=" 'sideBar' ">
+    
   <ul [className]=" 'sideBarUL' ">
     <li *ngFor="let sideBarIcon of sideBarIcons" [className]="sideBarIcon.name">
-      <a  [title]="sideBarIcon.name + ':' + ' ' + sideBarIcon.description">
-        {{sideBarIcon.name}}
-      </a></li>
+        <a *ngIf="sideBarIcon.name === 'Logo'"  [title]="sideBarIcon.name + ':' + ' ' + sideBarIcon.description">
+            <fa-icon [className]=" 'popUL' " [icon]='faInfinity'></fa-icon>
+        </a>
+        <a *ngIf="sideBarIcon.name === 'Home'"  [title]="sideBarIcon.name + ':' + ' ' + sideBarIcon.description">
+            <fa-icon [className]=" 'popgreen' " [icon]='faHome'></fa-icon>
+        </a>
+        <a *ngIf="sideBarIcon.name === 'Folders'"  [title]="sideBarIcon.name + ':' + ' ' + sideBarIcon.description">
+            <fa-icon [className]=" 'popUL' " [icon]='faFolder'></fa-icon>
+        </a>
+      </li>
+    
   </ul>
 </div>

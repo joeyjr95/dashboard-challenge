@@ -2,14 +2,15 @@
     position: fixed;
     width: 100%;
     top: 0;
+    
 }
 .topBarFlex{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: whitesmoke;
+    background: rgb(250, 249, 249);
     height: 2.5vw;
-    border: .07px solid black;
+    box-shadow: 0px 3.5px rgba(119, 119, 119, 0.678);;
     align-items: center;
 }
 .topBarUL{
@@ -22,6 +23,8 @@
 }
 .topBarH1{
     padding-left: 4.5vw;
+    font-weight: 800;
+    font-size: 20px;
  
 }
 .topBarH1 a{

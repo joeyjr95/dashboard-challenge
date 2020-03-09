@@ -14,7 +14,14 @@
     flex-direction: column;
     height: 25%;
     justify-content: flex-start;
+    align-items: center;
 }
 .sideBarUL li{
     margin-bottom: 5vh;
+}
+.popUL{
+    color: white;
+}
+.popgreen{
+    color: rgb(55, 141, 55);
 }
