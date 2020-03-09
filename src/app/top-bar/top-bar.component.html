@@ -1,0 +1,9 @@
+<a [routerLink]="['/']">
+<h1>APP NAME</h1>
+</a>
+<div *ngFor="let topBarIcon of topBarIcons">
+    <a [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
+        {{topBarIcon.name}}
+    </a>
+</div>
+
