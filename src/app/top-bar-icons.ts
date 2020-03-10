@@ -13,7 +13,8 @@ export const topBarIcons = [
       },
       {
           name: 'User Icon',
-          description: ''
+          description: '',
+          image: 'https://i.imgur.com/glEu5cm.jpg'
       },
       {
           name: 'John Doe',

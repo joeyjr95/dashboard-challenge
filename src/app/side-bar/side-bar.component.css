@@ -12,7 +12,7 @@
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    height: 25%;
+    height: 35%;
     justify-content: flex-start;
     align-items: center;
 }
@@ -21,6 +21,7 @@
 }
 .popUL{
     color: white;
+    
 }
 .popgreen{
     color: rgb(55, 141, 55);

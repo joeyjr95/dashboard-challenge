@@ -15,7 +15,7 @@
                         <fa-icon [className]=" 'popUL' " [icon]='faCommentAlt'></fa-icon>
                     </a>
                     <a *ngIf="topBarIcon.name === 'User Icon'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
-                           {{ topBarIcon.name }}
+                           <img [className]=" 'profileImg' " src="https://i.imgur.com/glEu5cm.jpg">
                         </a>
                         <a *ngIf="topBarIcon.name === 'John Doe'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
                                 {{ topBarIcon.name }}
