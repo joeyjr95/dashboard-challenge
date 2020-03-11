@@ -46,11 +46,42 @@
             margin: 0px;
         }
         >p{
-            margin: 0.5px;
+            margin-top: 2%;;
             color: rgb(114, 112, 112);
+            
         }
     }
 }
+ol{
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+    counter-reset: item;
+    list-style-type: none;
+}
+li:before {
+    content: counter(item) "";
+    counter-increment: item;
+    font-weight: 100;
+}
+
+.sortedDatesLi{
+    width: 100%;
+    padding-bottom: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >.name{
+        font-weight: 400;
+    }
+    > .date, .condition{
+        font-weight: 100;
+    }
+    > .name, .date, .condition{
+        width: 25%;
+    }
+}
+
 .bottomChart{
     display: flex;
     width: inherit;

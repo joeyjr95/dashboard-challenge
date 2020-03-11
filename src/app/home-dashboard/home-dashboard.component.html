@@ -5,27 +5,31 @@
   </div>
   <div [className]=" 'topCharts' ">
     <div>
-      <h3>summary of items</h3>
-      <p>description</p>
+      <h3>Summary of tasks</h3>
+      <p>Summary of In Progress vs New tasks</p>
       <div>
         <canvas id="pieChart"></canvas>
       </div>
     </div>
     <div>
-      <h3>comparison of items</h3>
-      <p>description</p>
+      <h3>Comparison of the current and next month</h3>
+      <p>The tasks for the next two months compared</p>
       <div>
         <canvas id="barChart"></canvas>
       </div>
     </div>
     <div>
-      <h3>Top 5</h3>
-      <p>description</p>
-      <li [className]=" 'sortedDatesLi' "  *ngFor="let dataDate of dataDates">
-        {{dataDate.name}}
-        {{dataDate.condition}}
-        {{ dataDate.date }}
+      <h3>Upcoming Tasks</h3>
+      <p>The next 5 tasks</p>
+      <ol>
+      <li [className]=" 'sortedDatesLi' " *ngFor="let dataDate of dataDates">
+        
+       <div [className]= " 'name' ">{{dataDate.name}}</div>
+        <div [className]= " 'condition' ">{{dataDate.condition}}</div>
+      <div [className]= " 'date' ">{{ dataDate.date }}</div>
+    
       </li>
+    </ol>
     </div>
   </div>
   
@@ -35,6 +39,7 @@
     <div>
       <h3>Over Time</h3>
       <p>description</p>
+      <!-- <canvas id="lineChart"></canvas> -->
     </div>
   </div>
   
