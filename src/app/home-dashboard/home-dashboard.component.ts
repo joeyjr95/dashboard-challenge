@@ -37,7 +37,7 @@ import { data } from '../data';
   })
 
   
-  pieChart=[]
+  
   barChart=[]
   lineChart=[]
   ngOnInit(){
@@ -102,24 +102,6 @@ import { data } from '../data';
     ] 
     return months[++num]
     }
-    
-    this.pieChart = new Chart ('pieChart', {
-      type: 'doughnut',
-      data:{
-        labels:[ 'In Progress', 'New'],
-        datasets:[{
-          data:[this.progress.length, this.new.length],
-          backgroundColor:[
-            '#13FF95',
-            '#0E367A',
-
-          ],
-        }]
-      },
-      options:{
-        cutoutPercentage: 80,
-      }
-    });
     this.barChart = new Chart ('barChart', {
       type: 'bar',
       data:{

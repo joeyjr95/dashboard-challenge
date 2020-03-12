@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { HomeDashboardComponent } from './home-dashboard/home-dashboard.component';
+import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { HomeDashboardComponent } from './home-dashboard/home-dashboard.componen
     HomeDashboardComponent,
     TopBarComponent,
     SideBarComponent,
+    DoughnutChartComponent,
   ],
   imports: [
     BrowserModule,
