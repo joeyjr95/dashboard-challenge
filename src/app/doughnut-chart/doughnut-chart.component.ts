@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Chart} from 'chart.js';
 import { data } from '../data';
-import { HtmlParser } from '@angular/compiler';
+
 
 @Component({
   selector: 'app-doughnut-chart',
@@ -11,25 +11,35 @@ import { HtmlParser } from '@angular/compiler';
 export class DoughnutChartComponent implements OnInit {
   data = data;
   pieChart=[];
+  // shows tasks that have the value of 'In Progress'
   progress = data.filter(task => {
     return task.condition === 'In Progress'
     })
+  // shows tasks that have the value of 'New'
   new = data.filter(task => {
     return task.condition === 'New'
   })
-  constructor() { }
   
 
   ngOnInit(){
-    let progress = this.progress
-    let newTask = this.new
+
+    // tasks that been filtered for the value of 'In Progress'
+    const progress = this.progress
+
+    // tasks that been filtered for the value of 'New'
+    const newTask = this.new
+
+    // shows length of In Progress tasks on Label
     function progressLabel(){
       return (`In-Progress   ${(progress.length)}`)
     }
+
+    // shows length of New tasks on Label
     function newLabel(){
       return (`New   ${(newTask.length)}`)
     }
-    console.log(progressLabel())
+
+    //defines parameters for the pie chart
     this.pieChart = new Chart ('pieChart', {
       type: 'doughnut',
       data:{

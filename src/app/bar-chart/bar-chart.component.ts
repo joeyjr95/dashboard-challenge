@@ -9,16 +9,22 @@ import { data } from '../data';
 })
 export class BarChartComponent implements OnInit {
   data = data;
+
+  //filters tasks to only show this months tasks
   thisMonth = data.filter(task =>{
     return new Date(task.date).getMonth() === new Date().getMonth()
    })
+
+   //filters tasks to only show next months tasks
    nextMonth  = data.filter(task =>{
      return new Date(task.date).getMonth() === (new Date().getMonth() + 1)
     })
   barChart=[]
   ngOnInit() {
+    //gets the correct month's name depending 
+    //on Date().getMonth() number
     function getMonthName(num){
-      let months = [ 
+      const months = [ 
         'January', 'February', 
       'March', 'April', 'May', 'June',
       'July', 'August', 'September', 
@@ -26,6 +32,7 @@ export class BarChartComponent implements OnInit {
     ] 
     return months[num]
   }
+  //defines parameters for the bar chart
     this.barChart = new Chart ('barChart', {
       type: 'bar',
       data:{
@@ -51,6 +58,7 @@ export class BarChartComponent implements OnInit {
             gridLines: {
               display:false
           },
+          //sets the bar's widths
             barPercentage: 0.4,
             
           }],

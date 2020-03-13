@@ -12,19 +12,18 @@ export class LineChartComponent implements OnInit {
   lineChart=[]
 
   ngOnInit(){
-    Chart.defaults.global.responsive = true;
-    
-    Chart.defaults.global.maintainAspectRatio = false;
-
+    // maps thru sales data and returns x and y values
     let salesMapped = productTrends.map(month =>{
       return {x: new Date(month.month), y: month.sold }
     })
+
+    // maps thru prediction data and returns x and y values
     let predictionsMapped = predictTrends.map(month =>{
       return {x: new Date(month.month), y: month.sold }
     })
 
     
-
+    //defines parameters for the line chart
     this.lineChart = new Chart('lineChart', {
       
       type: 'line',
