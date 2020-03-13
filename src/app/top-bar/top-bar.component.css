@@ -12,7 +12,7 @@
     justify-content: space-between;
     background: rgb(250, 249, 249);
     height: 3.5vw;
-    box-shadow: 0px 5px 5px rgba(119, 119, 119, 0.678);
+    box-shadow: 0px 6px 5px rgba(119, 119, 119, 0.678);
     align-items: center;
 }
 .topBarUL{
@@ -23,6 +23,7 @@
     justify-content: space-around;
     align-items: center;
     margin-right: 2vw;
+    /* font-size: 40px; */
 }
 .topBarH1{
     padding-left: 1.5vw;

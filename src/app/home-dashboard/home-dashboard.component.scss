@@ -37,7 +37,7 @@
     justify-content: space-between;
     >div{
         background: rgb(250, 249, 249);
-        box-shadow: 5px 5px 5px rgba(119, 119, 119, 0.678);;
+        box-shadow: 6px 6px 5px rgba(119, 119, 119, 0.678);;
         border-radius: 8px;
         width: 30.6%;
         height: 32vh;
@@ -109,13 +109,14 @@ li:before {
     padding-top: 1.5vh;
     >div{
     background: rgb(250, 249, 249);
-    box-shadow: 5px 5px 5px rgba(119, 119, 119, 0.678);
+    box-shadow: 6px 6px 5px rgba(119, 119, 119, 0.678);
     border-radius: 8px;
     height: 41vh;
     padding: 1%;
     >.word-container{
         display: flex;
         align-items: center;
+        padding-bottom: 2%;
     >h3{
         margin: 0px;
         margin-right: .2%;
@@ -130,5 +131,5 @@ li:before {
     }
 }
 .container{
-  height: 90%;
+  height: 85%;
 }
