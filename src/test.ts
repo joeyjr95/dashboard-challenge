@@ -24,20 +24,3 @@ const context = require.context('./', true, /\.spec\.ts$/);
 // And load the modules.
 context.keys().map(context);
 
-// progress = data.filter(task => {
-  //   return task.condition === 'In Progress'
-  //   })
-  // new = data.filter(task => {
-  //   return task.condition === 'New'
-  // })
-  // progressByMonth = this.progress.map( task =>{
-  //   let dateMonth = (new Date(task.date).getMonth() + 1)
-  //   return { x: dateMonth, y: 1 } 
-  // })
-  // let dataNewMonths = this.new.map( task =>{
-    //   return { x: new Date(task.date), y: task.priority}
-    // })
-    // console.log(dataNewMonths)
-    // let dataProgressMonths = this.progress.map( task =>{
-    //   return { x: new Date(task.date), y: task.priority}
-    // })
