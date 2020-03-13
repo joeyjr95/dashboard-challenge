@@ -52,7 +52,7 @@ export class BarChartComponent implements OnInit {
         datasets: [
           {
             data: [this.thisMonth.length, this.nextMonth.length],
-            backgroundColor: ['#20C0E8', '#20C0E8']
+            backgroundColor: ['#1FB6DB', '#1FB6DB']
           }
         ]
       },
