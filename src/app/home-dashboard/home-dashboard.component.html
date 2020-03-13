@@ -12,9 +12,7 @@
     <div>
       <h3>Comparison of the current and next month</h3>
       <p>The tasks for the next two months compared</p>
-      <div>
-        <canvas id="barChart"></canvas>
-      </div>
+      <app-bar-chart></app-bar-chart>
     </div>
     <div>
       <h3>Upcoming Tasks</h3>
@@ -37,7 +35,9 @@
     <div>
       <h3>Over Time</h3>
       <p>description</p>
-      <!-- <canvas id="lineChart"></canvas> -->
+      <div [className]=" 'container' ">
+      <canvas id="lineChart"></canvas>
+    </div>
     </div>
   </div>
   

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Chart} from 'chart.js';
 import { data } from '../data';
+import { HtmlParser } from '@angular/compiler';
 
 @Component({
   selector: 'app-doughnut-chart',
@@ -17,12 +18,22 @@ export class DoughnutChartComponent implements OnInit {
     return task.condition === 'New'
   })
   constructor() { }
+  
 
   ngOnInit(){
+    let progress = this.progress
+    let newTask = this.new
+    function progressLabel(){
+      return (`In-Progress   ${(progress.length)}`)
+    }
+    function newLabel(){
+      return (`New   ${(newTask.length)}`)
+    }
+    console.log(progressLabel())
     this.pieChart = new Chart ('pieChart', {
       type: 'doughnut',
       data:{
-        labels:[ 'In Progress', 'New'],
+        labels:[ progressLabel(), newLabel()],
         datasets:[{
           data:[this.progress.length, this.new.length],
           backgroundColor:[
@@ -33,6 +44,13 @@ export class DoughnutChartComponent implements OnInit {
         }]
       },
       options:{
+        legend: {
+          labels:{
+            usePointStyle: true
+          },
+          position: 'right',
+          
+        },
         cutoutPercentage: 80,
       }
     });
