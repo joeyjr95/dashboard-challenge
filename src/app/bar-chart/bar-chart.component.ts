@@ -51,7 +51,8 @@ export class BarChartComponent implements OnInit {
             gridLines: {
               display:false
           },
-            barPercentage: 0.4
+            barPercentage: 0.4,
+            
           }],
           yAxes:[{
             gridLines: {

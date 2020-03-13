@@ -18,7 +18,7 @@ export const data=[
     },{
         name: 'Item D',
         priority: 4,
-        condition: 'New',
+        condition: 'In Progress',
         date: '3-19-2020'
     },{
         name: 'Item E',
@@ -30,6 +30,12 @@ export const data=[
         priority: 3,
         condition: 'New',
         date: '7-12-2020'
+    },
+    {
+        name: 'Item G',
+        priority: 3,
+        condition: 'In Progress',
+        date: '8-16-2020'
     },
 
 ]

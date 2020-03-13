@@ -5,13 +5,13 @@
   </div>
   <div [className]=" 'topCharts' ">
     <div>
-      <h3>Summary of tasks</h3>
+      <h3>Summary of Tasks</h3>
       <p>Summary of In Progress vs New tasks</p>
       <app-doughnut-chart></app-doughnut-chart>
     </div>
     <div>
-      <h3>Comparison of the current and next month</h3>
-      <p>The tasks for the next two months compared</p>
+      <h3>Comparison of the Current and Next Month</h3>
+      <p>The tasks for the current and next month compared</p>
       <app-bar-chart></app-bar-chart>
     </div>
     <div>
@@ -38,9 +38,7 @@
       <h3>Actual vs Projected Sales over Time</h3>
       <p>(Projected is light grey)</p>
     </span>
-      <div [className]=" 'container' ">
-      <canvas id="lineChart"></canvas>
-    </div>
+    <app-line-chart></app-line-chart>
     </div>
   </div>
   

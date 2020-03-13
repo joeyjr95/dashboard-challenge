@@ -9,6 +9,7 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { HomeDashboardComponent } from './home-dashboard/home-dashboard.component';
 import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     SideBarComponent,
     DoughnutChartComponent,
     BarChartComponent,
+    LineChartComponent,
   ],
   imports: [
     BrowserModule,
