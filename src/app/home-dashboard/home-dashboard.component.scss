@@ -113,13 +113,20 @@ li:before {
     border-radius: 8px;
     height: 41vh;
     padding: 1%;
+    >.word-container{
+        display: flex;
+        align-items: center;
     >h3{
         margin: 0px;
+        margin-right: .2%;
+        font-weight: 100;
+
     }
     > p{
         margin: 0.5px;
         color: rgb(114, 112, 112);
     }
+}
     }
 }
 .container{

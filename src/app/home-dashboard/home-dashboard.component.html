@@ -34,8 +34,10 @@
 
   <div [className]=" 'bottomChart' ">
     <div>
-      <h3>Over Time</h3>
-      <p>description</p>
+      <span [className]=" 'word-container' ">
+      <h3>Actual vs Projected Sales over Time</h3>
+      <p>(Projected is light grey)</p>
+    </span>
       <div [className]=" 'container' ">
       <canvas id="lineChart"></canvas>
     </div>
