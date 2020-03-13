@@ -12,6 +12,6 @@ export const sideBarIcons = [
       {
         name: 'Folders',
         description: `User's Folders`,
-        icon: `<fa-icon [className]=" 'popUL' " [icon]='faFolder'></fa-icon>` 
+        icon: `<fa-icon [className]=" 'popUL' " [icon]='faFolder'></fa-icon>`
       }
-    ]
+    ];

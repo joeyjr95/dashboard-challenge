@@ -9,26 +9,26 @@ import { productTrends, predictTrends} from '../data';
 })
 export class LineChartComponent implements OnInit {
 
-  lineChart=[]
+  lineChart = [];
 
-  ngOnInit(){
+  ngOnInit() {
     // maps thru sales data and returns x and y values
-    let salesMapped = productTrends.map(month =>{
-      return {x: new Date(month.month), y: month.sold }
-    })
+    const salesMapped = productTrends.map(month => {
+      return {x: new Date(month.month), y: month.sold };
+    });
 
     // maps thru prediction data and returns x and y values
-    let predictionsMapped = predictTrends.map(month =>{
-      return {x: new Date(month.month), y: month.sold }
-    })
+    const predictionsMapped = predictTrends.map(month => {
+      return {x: new Date(month.month), y: month.sold };
+    });
 
-    
-    //defines parameters for the line chart
+
+    // defines parameters for the line chart
     this.lineChart = new Chart('lineChart', {
-      
+
       type: 'line',
-      data:{
-        datasets:[{
+      data: {
+        datasets: [{
           label: ['actual'],
           data: salesMapped,
           fill: false,
@@ -54,22 +54,22 @@ export class LineChartComponent implements OnInit {
                 fontSize: 18,
               },
               gridLines: {
-                display:false
+                display: false
             },
                 type: 'time',
                 time: {
-                    unit: "quarter",
+                    unit: 'quarter',
                     displayFormats: {
                       quarter: 'MMM'
                     },
                 }
             }],
-            yAxes:[{
+            yAxes: [{
               gridLines: {
-                display:false
+                display: false
             },
               display: true,
-              ticks:{
+              ticks: {
                 suggestedMax: 12,
                 beginAtZero: true,
                 fontSize: 18,
