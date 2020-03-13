@@ -17,7 +17,7 @@
 
     >h2{
         color: rgb(114, 112, 112);
-        font-weight: 100;
+        
     }
     >a{
         box-shadow: 5px 5px 5px rgba(119, 119, 119, 0.678);
@@ -45,12 +45,12 @@
         
         >h3{
             margin: 0px;
-            font-weight: 100;
+            
         }
         >p{
             margin-top: 2%;;
             color: rgb(114, 112, 112);
-            font-weight: 100;
+            
             
         }
     }
@@ -63,13 +63,14 @@ ol{
     list-style-type: none;
     >li{
         padding-bottom: 5%;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 }
 li:before {
     content: counter(item) "";
     counter-increment: item;
-    font-weight: 100;
+    font-weight: 300;
+
 }
 
 .sortedDatesLi{
@@ -80,14 +81,15 @@ li:before {
     align-items: center;
     
     >.name{
-        font-weight: 400;
+        
         margin-left: 7%;
         width: 20%;
+        font-weight: 400;
         
     }
     > .date, .condition{
-        font-weight: 100;
         width: 33%;
+        font-weight: 300;
         
     }
     
@@ -120,7 +122,6 @@ li:before {
     >h3{
         margin: 0px;
         margin-right: .2%;
-        font-weight: 100;
 
     }
     > p{

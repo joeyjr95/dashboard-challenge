@@ -12,12 +12,12 @@
                         <fa-icon [className]=" 'popUL' " [icon]='faBell' size="2x"></fa-icon>
                     </a>
                     <a *ngIf="topBarIcon.name === 'Messages'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
-                        <fa-icon [className]=" 'popUL' " [icon]='faCommentAlt' size="2x"></fa-icon>
+                        <fa-icon [className]=" 'popUL' " [icon]='faCommentAlt' size="2x" flip="horizontal"></fa-icon>
                     </a>
                     <a *ngIf="topBarIcon.name === 'User Icon'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
                            <img [className]=" 'profileImg' " src="https://i.imgur.com/glEu5cm.jpg">
                         </a>
-                        <a *ngIf="topBarIcon.name === 'John Doe'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
+                        <a [className]=" 'profileName' " *ngIf="topBarIcon.name === 'John Doe'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
                                {{ topBarIcon.name }}
                              </a>
                     

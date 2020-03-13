@@ -23,11 +23,11 @@
     justify-content: space-around;
     align-items: center;
     margin-right: 2vw;
-    /* font-size: 40px; */
+    color: rgb(70, 70, 70);
+
 }
 .topBarH1{
     padding-left: 1.5vw;
-    font-weight: 400;
     font-size: 1.3em;
  
 }
@@ -37,5 +37,10 @@
 }
 .topBarH1 a{
     text-decoration: none;
+    color: #000;
+}
+.profileName{
+    font-size: 1.3em;
+    font-weight: 300;
     color: #000;
 }

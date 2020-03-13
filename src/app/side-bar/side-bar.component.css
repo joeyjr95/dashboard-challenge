@@ -16,9 +16,14 @@
     height: 35%;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 12%;
 }
+
 .sideBarUL li{
     margin-bottom: 5vh;
+}
+.Logo{
+    padding-bottom: 1vh;
 }
 .popUL{
     color: white;
