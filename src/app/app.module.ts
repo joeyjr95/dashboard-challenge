@@ -31,5 +31,5 @@ import { LineChartComponent } from './line-chart/line-chart.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {
- 
+
 }
