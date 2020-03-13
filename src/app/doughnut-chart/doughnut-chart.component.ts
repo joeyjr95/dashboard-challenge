@@ -46,7 +46,8 @@ export class DoughnutChartComponent implements OnInit {
       options:{
         legend: {
           labels:{
-            usePointStyle: true
+            usePointStyle: true,
+            fontSize: 16,
           },
           position: 'right',
           

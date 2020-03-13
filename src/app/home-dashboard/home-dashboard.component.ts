@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown, faLink } from '@fortawesome/free-solid-svg-icons';
 import {Chart} from 'chart.js';
 import { productTrends, predictTrends, data } from '../data';
 import * as moment from 'moment/moment';
@@ -11,9 +11,8 @@ import * as moment from 'moment/moment';
   })
   export class HomeDashboardComponent implements OnInit {
    faCaretDown = faCaretDown;
+   faLink = faLink;
    data = data;
-   productTrends = productTrends
-   sortedTasks = ''
    
   preSortDataDates = data.sort((a,b) => {
     return Date.parse(a.date) - Date.parse(b.date);
@@ -34,24 +33,21 @@ import * as moment from 'moment/moment';
   ngOnInit(){
     Chart.defaults.global.responsive = true;
     Chart.defaults.global.maintainAspectRatio = false;
-    let now = moment()
-    function threeMonths(){
-      let month = new Date();
-      let threeMonth = month.setMonth(month.getMonth() + 3);
-      return new Date(threeMonth)
-    }
-    function minusThreeMonths(){
-      let month = new Date();
-      let threeMonth = month.setMonth(month.getMonth() - 3);
-      return new Date(threeMonth)
-    }
-    
+
+    // let now = moment()
+    let momentDates = data.map( task =>{
+       task.date = moment(task.date).format('MMM. DD, YYYY')
+       return task
+    })
+    console.log(momentDates)
+
     let salesMapped = productTrends.map(month =>{
       return {x: new Date(month.month), y: month.sold }
     })
     let predictionsMapped = predictTrends.map(month =>{
       return {x: new Date(month.month), y: month.sold }
     })
+
     
 
     this.lineChart = new Chart('lineChart', {
@@ -62,7 +58,7 @@ import * as moment from 'moment/moment';
           label: ['actual'],
           data: salesMapped,
           fill: false,
-          borderColor: '#0E367A',
+          borderColor: '#02699A',
           lineTension: 0,
           pointRadius: 0,
         },
@@ -70,7 +66,7 @@ import * as moment from 'moment/moment';
           label: ['Prediction'],
           data: predictionsMapped,
           fill: false,
-          borderColor: 'grey',
+          borderColor: '#D9D9D9',
           lineTension: 0,
           pointRadius: 0,
         }
@@ -80,14 +76,15 @@ import * as moment from 'moment/moment';
         legend: {display: false},
         scales: {
             xAxes: [{
+              ticks: {
+                fontSize: 18,
+              },
               gridLines: {
                 display:false
             },
                 type: 'time',
                 time: {
                     unit: "quarter",
-                    // min: minusThreeMonths(),
-                    // max: threeMonths()
                     displayFormats: {
                       quarter: 'MMM'
                     },
@@ -101,6 +98,7 @@ import * as moment from 'moment/moment';
               ticks:{
                 suggestedMax: 12,
                 beginAtZero: true,
+                fontSize: 18,
               }
             }]
         }

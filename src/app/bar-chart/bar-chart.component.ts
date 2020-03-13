@@ -60,6 +60,7 @@ export class BarChartComponent implements OnInit {
             display: false,
             ticks:{
               beginAtZero: true,
+              
             }
           }]
         }

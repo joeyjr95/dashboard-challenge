@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 6vh;
+    padding-top: 8vh;
     padding-left: 3.5vw;
    
 }
@@ -20,7 +20,7 @@
         font-weight: 100;
     }
     >a{
-        box-shadow: 2.5px 2.5px 5px rgba(119, 119, 119, 0.678);
+        box-shadow: 5px 5px 5px rgba(119, 119, 119, 0.678);
         background-color: white;
         padding-left: 8px;
         padding-right: 8px;
@@ -37,27 +37,34 @@
     justify-content: space-between;
     >div{
         background: rgb(250, 249, 249);
-        box-shadow: 3.5px 3.5px 5px rgba(119, 119, 119, 0.678);;
+        box-shadow: 5px 5px 5px rgba(119, 119, 119, 0.678);;
         border-radius: 8px;
         width: 30.6%;
         height: 32vh;
         padding: 1%;
+        
         >h3{
             margin: 0px;
+            font-weight: 100;
         }
         >p{
             margin-top: 2%;;
             color: rgb(114, 112, 112);
+            font-weight: 100;
             
         }
     }
 }
 ol{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
     height: 100%;
     counter-reset: item;
     list-style-type: none;
+    >li{
+        padding-bottom: 5%;
+        font-size: 1.2em;
+    }
 }
 li:before {
     content: counter(item) "";
@@ -71,14 +78,26 @@ li:before {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     >.name{
         font-weight: 400;
+        margin-left: 7%;
+        width: 20%;
+        
     }
     > .date, .condition{
         font-weight: 100;
+        width: 33%;
+        
     }
-    > .name, .date, .condition{
-        width: 25%;
+    
+    > div{
+        font-size: 1.1em;
+        >a{
+            >fa-icon{
+                color: rgb(34, 194, 101);
+            }
+        }
     }
 }
 
@@ -90,7 +109,7 @@ li:before {
     padding-top: 1.5vh;
     >div{
     background: rgb(250, 249, 249);
-    box-shadow: 3.5px 3.5px 5px rgba(119, 119, 119, 0.678);
+    box-shadow: 5px 5px 5px rgba(119, 119, 119, 0.678);
     border-radius: 8px;
     height: 41vh;
     padding: 1%;

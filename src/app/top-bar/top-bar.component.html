@@ -6,19 +6,19 @@
 <li [className]="topBarIcon.name" *ngFor="let topBarIcon of topBarIcons">
         
                     <a *ngIf="topBarIcon.name === 'Search'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
-                        <fa-icon [className]=" 'popUL' " [icon]='faSearch'></fa-icon>
+                        <fa-icon [className]=" 'popUL' " [icon]='faSearch' size="2x"></fa-icon>
                     </a>
                     <a *ngIf="topBarIcon.name === 'Alert'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
-                        <fa-icon [className]=" 'popUL' " [icon]='faBell'></fa-icon>
+                        <fa-icon [className]=" 'popUL' " [icon]='faBell' size="2x"></fa-icon>
                     </a>
                     <a *ngIf="topBarIcon.name === 'Messages'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
-                        <fa-icon [className]=" 'popUL' " [icon]='faCommentAlt'></fa-icon>
+                        <fa-icon [className]=" 'popUL' " [icon]='faCommentAlt' size="2x"></fa-icon>
                     </a>
                     <a *ngIf="topBarIcon.name === 'User Icon'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
                            <img [className]=" 'profileImg' " src="https://i.imgur.com/glEu5cm.jpg">
                         </a>
                         <a *ngIf="topBarIcon.name === 'John Doe'"  [title]="topBarIcon.name + ':' + ' ' + topBarIcon.description">
-                                {{ topBarIcon.name }}
+                               {{ topBarIcon.name }}
                              </a>
                     
                   

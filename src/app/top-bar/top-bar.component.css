@@ -1,7 +1,9 @@
 .topBar{
     position: fixed;
-    width: 100%;
+    right: 0;
+    width: 95.5%;
     top: 0;
+    z-index: 1;
     
 }
 .topBarFlex{
@@ -9,8 +11,8 @@
     flex-direction: row;
     justify-content: space-between;
     background: rgb(250, 249, 249);
-    height: 3vw;
-    box-shadow: 0px 3.5px 5px rgba(119, 119, 119, 0.678);;
+    height: 3.5vw;
+    box-shadow: 0px 5px 5px rgba(119, 119, 119, 0.678);
     align-items: center;
 }
 .topBarUL{
@@ -23,14 +25,14 @@
     margin-right: 2vw;
 }
 .topBarH1{
-    padding-left: 4.5vw;
+    padding-left: 1.5vw;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.3em;
  
 }
 .profileImg{
     border-radius: 100px;
-    height: 2vw;
+    height: 2.5vw;
 }
 .topBarH1 a{
     text-decoration: none;
